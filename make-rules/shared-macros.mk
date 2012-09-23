@@ -41,6 +41,7 @@ export DOWNLOAD_SEARCH_PATH +=	$(INTERNAL_ARCHIVE_MIRROR)
 export DOWNLOAD_SEARCH_PATH +=	$(EXTERNAL_ARCHIVE_MIRROR)
 
 # The workspace starts at the mercurial root
+export WS_TOP ?=		$(shell git rev-parse --show-toplevel)
 export WS_TOP ?=		$(shell hg root)
 
 WS_LOGS =	$(WS_TOP)/$(MACH)/logs
