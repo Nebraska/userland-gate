@@ -80,7 +80,7 @@ PKG_SOLARIS_VERSION ?= 5.12
 
 include $(WS_MAKE_RULES)/ips-buildinfo.mk
 
-COMPILER =		studio
+COMPILER =		gcc
 BITS =			32
 PYTHON_VERSION =	2.6
 PYTHON_VERSIONS =	2.7 2.6
@@ -227,7 +227,7 @@ export PARFAIT_NATIVESUNCXX=$(SPRO_VROOT)/bin/CC
 export PARFAIT_NATIVEGCC=$(GCC_ROOT)/bin/gcc
 export PARFAIT_NATIVEGXX=$(GCC_ROOT)/bin/g++
 
-GCC_ROOT =	/usr/sfw
+GCC_ROOT =	/opt/gcc/4.4.4
 
 CC.studio.32 =	$(SPRO_VROOT)/bin/cc
 CXX.studio.32 =	$(SPRO_VROOT)/bin/CC
